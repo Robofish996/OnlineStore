@@ -131,6 +131,7 @@ nav a:hover {
     align-items: center;
     margin-right: 50px;
     background-color: white;
+    margin-top: 10px;
 }
 
 .cart a {
