@@ -85,6 +85,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 .navbar-nav {
@@ -93,6 +94,8 @@ header {
     width: 80%;
     margin-right: 1rem;
     font-weight: bold;
+    margin-left: 50px;
+    font-size: large;
 
 }
 
@@ -131,7 +134,7 @@ nav a:hover {
     align-items: center;
     margin-right: 50px;
     background-color: white;
-    margin-top: 10px;
+   
 }
 
 .cart a {
