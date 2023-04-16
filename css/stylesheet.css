@@ -1,10 +1,11 @@
+/* Resetting default margin, padding, and box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*setting up cover image*/
+/* Styling for the landing page cover image */
 .cover {
   width: 100%;
   height: 100vh;
@@ -20,11 +21,13 @@
   transition: opacity 0.5s ease-in-out;
 }
 
+/* Hiding the cover image when the "hide" class is added */
 .cover.hide {
   opacity: 0;
   pointer-events: none;
 }
 
+/* Styling for text inside the cover image */
 .cover .center {
   text-align: center;
   color: black;
@@ -35,6 +38,7 @@
   margin-bottom: 6 rem;
 }
 
+/* Styling for buttons inside the cover image */
 .cover .btn {
   border: 2px solid white;
   padding: 0.75rem 2rem;
@@ -49,12 +53,13 @@
   color: black;
 }
 
+/* Styling for the main content container */
 .container {
   width: 80%;
   margin: auto;
 }
 
-/* Style for the Explore button */
+/* Styling for the "Explore" button */
 .center .btn {
   background-color: #fff;
   color: #333;
@@ -74,13 +79,13 @@
   color: #fff;
 }
 
+/* Animation for sliding up the cover image */
 .cover.slideUp {
   transform: translateY(-100%);
   transition: transform 0.5s ease-in-out;
 }
 
-
-/*setting up content alligned with main page heading*/
+/* Styling for the header/navbar */
 header {
   display: flex;
   align-items: center;
@@ -88,6 +93,7 @@ header {
   margin-left: 10px;
 }
 
+/* Styling for the navbar links */
 .navbar-nav {
   display: flex;
   justify-content: space-between;
@@ -96,7 +102,6 @@ header {
   font-weight: bold;
   margin-left: 50px;
   font-size: 25px;
-
 }
 
 .navbar-nav li {
@@ -111,19 +116,18 @@ header {
   color: #fff;
 }
 
-
+/* Styling for the links in the navbar */
 .nav-link {
   font-size: 1.2em;
   text-decoration: underline;
   color: white;
-
-
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Styling for the shopping cart icon */
 .cart {
   border: 2px solid black;
   border-radius: 50%;
@@ -134,111 +138,115 @@ nav a:hover {
   align-items: center;
   margin-right: 50px;
   background-color: white;
- 
 }
 
+/* Styling for the link inside the shopping cart icon */
 .cart a {
   font-size: 20px;
   color: black;
-}
-
-body {
+  }
+  
+  /* Setting up the body style */
+  body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(./images/homepage_default_bckgrnd.jpg);
+  }
   
-
-}
-
-.headingAfterSlide {
+  /* Styling for the main heading after the slide-up transition */
+  .headingAfterSlide {
   color: #fff;
   font-size: 50px;
-}
-
-.carousel {
+  }
+  
+  /* Styling for the carousel section */
+  .carousel {
   width: 80%;
   height: 500px;
   margin: 0 auto;
   overflow: hidden;
-}
-.carousel-caption {
+  }
+  
+  /* Styling for the caption of the carousel */
+  .carousel-caption {
   z-index: 1;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   color: #fff;
   text-align: center;
-}
-.carousel-item img {
+  }
+  
+  /* Styling for the images inside the carousel */
+  .carousel-item img {
   height: 500px;
   width: 100%;
   opacity: 80%;
-}
-.cHeader{
+  }
+  
+  /* Styling for the header of the cards section */
+  .cHeader {
   color: white;
   font-family: 'Times New Roman', Times, serif;
   text-decoration: underline;
   font-weight: bold;
   font-size: 38px;
-}
-.cText{
+  }
+  
+  /* Styling for the text inside the cards section */
+  .cText {
   color: white;
   font-weight: bold;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 200px; 
-  object-fit: contain;
-}
-
-.product-item img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  max-height: 200px;
-}
-
-.product-item h3 {
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  height: 60px;
-  overflow: hidden;
-}
-
-.product-item p {
-  font-size: 16px;
-  line-height: 1.2;
-  height: 60px;
-  overflow: hidden;
-}
-
-.product-item span {
-  font-size: 20px;
-  font-weight: bold;
-  color: #007bff;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.product-item button {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.product-item button:hover {
-  background-color: #0056b3;
-}
-.card {
-  width: 300px;
-  height: 500px;
+  }
+  
+  /* Styling for the individual cards */
+  .card {
   margin: 10px;
-  float: left;
-}
+  justify-content: center;
+  }
+  
+  /* Styling for the section headings */
+  .sectionHeadings {
+  text-align: center;
+  }
+  
+  /* Styling for the button */
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  
+  /* Styling for the cards on hover */
+  .card {
+  transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+  transform: scale(1.05);
+  }
+
+  .card button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #3e8e41;
+  }
+  
