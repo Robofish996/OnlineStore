@@ -22,13 +22,24 @@ fetch('./js/data.json')
       // Add the "product-item" and "card" classes to the product div
       productItem.classList.add("product-item", "card");
 
+      // Categorize the product based on its ID
+      let category = "";
+      if (product.id >= 1 && product.id <= 10) {
+        category = "Lounge Suite";
+      } else if (product.id >= 11 && product.id <= 20) {
+        category = "Dining Room Suite";
+      } else if (product.id >= 21 && product.id <= 30) {
+        category = "Study";
+      }
+
       // Set the HTML content of the product div with the product data
       productItem.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="card-img-top">
         <div class="card-body">
           <h3 class="card-title">${product.name}</h3>
           <p class="card-text">${product.description}</p>
-          <span class="card-price">$${product.price}</span>
+          <span class="card-price">R${product.price}</span>
+          <span class="card-category">${category}</span>
           <button class="btn btn-primary">Add to Cart</button>
         </div>
       `;

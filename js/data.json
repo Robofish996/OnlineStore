@@ -1,62 +1,184 @@
 [
     {
+        "id": 1, 
         "image": "./css/images/lounge_items/couchOne Black.jpg",
+        "name": "5 Seater",
         "description": "Product description 1",
         "price": 49.99
     },
     {
+        "id": 2,
         "image": "./css/images/lounge_items/couchOne Brown.jpg",
         "description": "Product description 2",
         "price": 99.99
     },
     {
+        "id": 3,
         "image": "./css/images/lounge_items/curve_single.jpg",
         "description": "Product description 3",
         "price": 149.99
     },
     {
+        "id": 4,
         "image": "./css/images/lounge_items/double_combo.jpg",
         "description": "Product description 4",
         "price": 149.99
     },
     {
+        "id": 5,
         "image": "./css/images/lounge_items/hassan_ouajbir.jpg",
         "description": "Product description 5",
         "price": 149.99
     },
     {
+        "id": 6,
         "image": "./css/images/lounge_items/Lshape_brown.jpg",
         "description": "Product description 6",
         "price": 149.99
     },
     {
+        "id": 7,
         "image": "./css/images/lounge_items/singleSeater.jpg",
         "description": "Product description 7",
         "price": 149.99
     },
     {
+        "id": 8,
         "image": "./css/images/lounge_items/suite combo.jpg",
         "description": "Product description 8",
         "price": 149.99
     },
     {
+        "id": 9,
         "image": "./css/images/lounge_items/triple combo.jpg",
         "description": "Product description 9",
         "price": 149.99
     },
     {
-        "image": "path/to/image10.jpg",
-        "description": "Product description 10",
+        "id": 10,
+        "image": "./css/images/lounge_items/triple combo.jpg",
+        "description": "Product description 10 ",
         "price": 149.99
     },
     {
-        "image": "path/to/image11.jpg",
+        "id": 11,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 11",
         "price": 149.99
     },
     {
-        "image": "path/to/image3.jpg",
+        "id": 12,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 12",
         "price": 149.99
+    },
+    {
+        "id": 13,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 13",
+        "price": 149.99
+    },
+    {
+        "id": 14,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 14",
+        "price": 149.99
+    },
+    {
+        "id": 15,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 15",
+        "price": 149.99
+    },
+    {
+        "id": 16,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 16",
+        "price": 149.99
+    },
+    {
+        "id": 17,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 17",
+        "price": 149.99
+    },
+    {
+        "id": 18,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 18",
+        "price": 149.99
+    },
+    {
+        "id": 19,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 19",
+        "price": 149.99
+    },
+    {
+        "id": 20,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 20",
+        "price": 149.99
+    },
+    {
+        "id": 21,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 21",
+        "price": 149.99
+    },
+    {
+        "id": 22,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 22",
+        "price": 149.99
+    },
+    {
+        "id": 23,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 23",
+        "price": 149.99
+    },
+    {
+        "id": 24,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 24",
+        "price": 149.99
+    },
+    {
+        "id": 25,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 25",
+        "price": 149.99
+    },
+    {
+        "id": 26,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 26",
+        "price": 149.99
+    },
+    {
+        "id": 27,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 27",
+        "price": 149.99
+    },
+    {
+        "id": 28,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 28",
+        "price": 149.99
+    },
+    {
+        "id": 29,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 29",
+        "price": 149.99
+    },
+    {
+        "id": 30,
+        "image": "./css/images/dinningRoom_items/roundtable.jpg",
+        "description": "Product description 30",
+        "price": 149.99
     }
+
 ]
