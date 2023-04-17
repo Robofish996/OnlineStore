@@ -68,3 +68,89 @@ fetch('./js/data.json')
       card.appendChild(button);
     }
   });
+ // Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+
+
+if(document.readyState == 'loading'){
+  document.addEventListener('DOMContentLoaded' , ready)
+}else{
+  ready()
+}
+
+
+function ready(){
+  //Adding functionality to buttons
+let removeCartItemButtons = document.getElementsByClassName('btn-danger')
+console.log(removeCartItemButtons)
+
+for(let i = 0; i < removeCartItemButtons.length; i++){
+  let button = removeCartItemButtons[i]
+  button.addEventListener('click', removeCartItem)
+}
+//Adding Function for increasing Quantity Items
+let quantityInputs = document.getElementsByClassName('cart-quantity-input')
+for(let i = 0; i < quantityInputs.length; i++){
+  let input = quantityInputs[i]
+  input.addEventListener('change', quantityChanged )
+}
+
+function quantityChanged(event){
+  let input = event.target
+  if(isNaN(input.value) || input.value <= 0){
+    input.value = 1
+  }
+  updateCartTotal()
+}
+}
+
+function removeCartItem(event){
+  let buttonClicked = event.target
+  buttonClicked.parentElement.parentElement.remove()
+  updateCartTotal()
+}
+
+
+
+//Adding function for updating  prices
+function updateCartTotal(){
+let cartItemContainer = document.getElementsByClassName('cart-items')[0]
+let cartRows = cartItemContainer.getElementsByClassName('cart-row')
+let total = 0
+for(let i = 0; i < cartRows.length; i++){
+  let cartRow = cartRows[i]
+  let priceElement = cartRow.getElementsByClassName('cart-price')[0]
+  let quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+  let price = parseFloat(priceElement.innerText.replace('$',''))
+  let quantity = quantityElement.value
+  total = total + (price * quantity) 
+}
+total = Math.round(total * 100) / 100
+document.getElementsByClassName('cart-total-price')[0].innerText = 'R' + total;
+
+
+
+}
