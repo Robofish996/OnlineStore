@@ -61,11 +61,10 @@ fetch('./js/data.json')
 
       // Add an "Add to Cart" button
       const button = document.createElement('button');
-      button.textContent = 'Add to Cart';
-      button.addEventListener('click', function() {
-        // Here you can add code to add the product to the cart
-        console.log(`Added ${product.name} to cart`);
-      });
+      button.classList.add('add-to-cart'); // Add the class "add-to-cart"
+      button.setAttribute('data-name', product.name); // Add data attribute for the product name
+      button.setAttribute('data-price', product.price.toFixed(2)); // Add data attribute for the product price
+      button.textContent = "Add to Cart"; // Add text to the button
       card.appendChild(button);
     }
   });

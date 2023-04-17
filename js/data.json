@@ -8,174 +8,203 @@
     },
     {
         "id": 2,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/couchOne Brown.jpg",
         "description": "Product description 2",
         "price": 99.99
     },
     {
         "id": 3,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/curve_single.jpg",
         "description": "Product description 3",
         "price": 149.99
     },
     {
         "id": 4,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/double_combo.jpg",
         "description": "Product description 4",
         "price": 149.99
     },
     {
         "id": 5,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/hassan_ouajbir.jpg",
         "description": "Product description 5",
         "price": 149.99
     },
     {
         "id": 6,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/Lshape_brown.jpg",
         "description": "Product description 6",
         "price": 149.99
     },
     {
         "id": 7,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/singleSeater.jpg",
         "description": "Product description 7",
         "price": 149.99
     },
     {
         "id": 8,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/suite combo.jpg",
         "description": "Product description 8",
         "price": 149.99
     },
     {
         "id": 9,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/triple combo.jpg",
         "description": "Product description 9",
         "price": 149.99
     },
     {
         "id": 10,
+        "name": "5 Seater",
         "image": "./css/images/lounge_items/triple combo.jpg",
         "description": "Product description 10 ",
         "price": 149.99
     },
     {
         "id": 11,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 11",
         "price": 149.99
     },
     {
         "id": 12,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 12",
         "price": 149.99
     },
     {
         "id": 13,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 13",
         "price": 149.99
     },
     {
         "id": 14,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 14",
         "price": 149.99
     },
     {
         "id": 15,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 15",
         "price": 149.99
     },
     {
         "id": 16,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 16",
         "price": 149.99
     },
     {
         "id": 17,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 17",
         "price": 149.99
     },
     {
         "id": 18,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 18",
         "price": 149.99
     },
     {
         "id": 19,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 19",
         "price": 149.99
     },
     {
         "id": 20,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 20",
         "price": 149.99
     },
     {
         "id": 21,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 21",
         "price": 149.99
     },
     {
         "id": 22,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 22",
         "price": 149.99
     },
     {
         "id": 23,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 23",
         "price": 149.99
     },
     {
         "id": 24,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 24",
         "price": 149.99
     },
     {
         "id": 25,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 25",
         "price": 149.99
     },
     {
         "id": 26,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 26",
         "price": 149.99
     },
     {
         "id": 27,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 27",
         "price": 149.99
     },
     {
         "id": 28,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 28",
         "price": 149.99
     },
     {
         "id": 29,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 29",
         "price": 149.99
     },
     {
         "id": 30,
+        "name": "5 Seater",
         "image": "./css/images/dinningRoom_items/roundtable.jpg",
         "description": "Product description 30",
         "price": 149.99
