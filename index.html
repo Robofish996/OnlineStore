@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  
+
   <div class="cover">
     <div class="center">
       <h1>Welcome to Dream Home</h1>
@@ -41,29 +41,32 @@
         </ul>
       </nav>
     </div>
-      <div class="cart">
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn"><span class="fa fa-shopping-cart"></span></button>
-        
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-        
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="cartItems"></div>
-            <h2>CART</h2>
-            <div>
-                <strong>ITEM</strong>
+    <div class="cart">
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn"><span class="fa fa-shopping-cart"></span></button>
 
-                <strong>PRICE</strong>
-                
-                <strong>QUANTITY</strong>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="section-header">CART</h2>
+          <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
           </div>
-        
+          <div class="cartItems">
+              </div>
+
+          <div class="cart-total">
+              <strong class="cart-total-title">Total</strong>
+              <span class="cart-total-price">$39.97</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
         </div>
-    </div>
-    
+
 
   </header>
   <main>

@@ -2,27 +2,27 @@
     {
         "id": 1, 
         "image": "./css/images/lounge_items/couchOne Black.jpg",
-        "name": "5 Seater",
+        "name": "1",
         "description": "Product description 1",
         "price": 49.99
     },
     {
         "id": 2,
-        "name": "5 Seater",
+        "name": "2",
         "image": "./css/images/lounge_items/couchOne Brown.jpg",
         "description": "Product description 2",
         "price": 99.99
     },
     {
         "id": 3,
-        "name": "5 Seater",
+        "name": "3",
         "image": "./css/images/lounge_items/curve_single.jpg",
         "description": "Product description 3",
         "price": 149.99
     },
     {
         "id": 4,
-        "name": "5 Seater",
+        "name": "4",
         "image": "./css/images/lounge_items/double_combo.jpg",
         "description": "Product description 4",
         "price": 149.99
