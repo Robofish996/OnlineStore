@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 });
 
+
+
 // Fetch the product data from the JSON file
 fetch('./js/data.json')
   // Parse the response as JSON
@@ -17,10 +19,6 @@ fetch('./js/data.json')
     const loungeProducts = products.filter(product => product.id >= 1 && product.id <= 10);
     const diningProducts = products.filter(product => product.id >= 11 && product.id <= 20);
     const studyProducts = products.filter(product => product.id >= 21 && product.id <= 30);
-
-    console.log("loungeProducts:", loungeProducts);
-    console.log("diningProducts:", diningProducts);
-    console.log("studyProducts:", studyProducts);
 
     // Select all the card elements
     const cards = document.querySelectorAll('.card');
@@ -70,6 +68,7 @@ fetch('./js/data.json')
       button.setAttribute('data-price', product.price.toFixed(2)); // Add data attribute for the product price
       button.textContent = "Add to Cart"; // Add text to the button
       card.appendChild(button);
+      
 
       // Add event listener to the "Add to Cart" button
       button.addEventListener("click", function () {
@@ -101,8 +100,12 @@ fetch('./js/data.json')
                     <button class="btn btn-danger" type="button">REMOVE</button>
                      </div>`;
 
+                     
           cartItemDiv.innerHTML = cartItemHTML;
           cartItemsDiv.appendChild(cartItemDiv);
+
+
+          
         }
         // Get all the cart quantity input elements
         const quantityInputs = document.querySelectorAll(".cart-quantity-input");
@@ -116,9 +119,26 @@ fetch('./js/data.json')
             }
           });
         });
+
+        let removeCartItemButtons = document.getElementsByClassName('btn-danger')
+        for (let i = 0; i < removeCartItemButtons.length; i++) {
+          let button = removeCartItemButtons[i]
+          button.addEventListener('click', function(event) {
+            let buttonClicked = event.target
+            let itemToRemoveIndex = i // Get the index of the item to be removed from the cartArray
+            buttonClicked.parentElement.parentElement.remove()
+            cartArray.splice(itemToRemoveIndex, 1) // Remove the item from the cartArray
+          })
+        }
+        
+
+        
+
       });
     }
   });
+
+
 // Get the modal
 let modal = document.getElementById("myModal");
 
