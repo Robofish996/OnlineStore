@@ -68,7 +68,7 @@ fetch('./js/data.json')
       button.setAttribute('data-price', product.price.toFixed(2)); // Add data attribute for the product price
       button.textContent = "Add to Cart"; // Add text to the button
       card.appendChild(button);
-      
+
 
       // Add event listener to the "Add to Cart" button
       button.addEventListener("click", function () {
@@ -100,12 +100,12 @@ fetch('./js/data.json')
                     <button class="btn btn-danger" type="button">REMOVE</button>
                      </div>`;
 
-                     
+
           cartItemDiv.innerHTML = cartItemHTML;
           cartItemsDiv.appendChild(cartItemDiv);
 
 
-          
+
         }
         // Get all the cart quantity input elements
         const quantityInputs = document.querySelectorAll(".cart-quantity-input");
@@ -123,17 +123,14 @@ fetch('./js/data.json')
         let removeCartItemButtons = document.getElementsByClassName('btn-danger')
         for (let i = 0; i < removeCartItemButtons.length; i++) {
           let button = removeCartItemButtons[i]
-          button.addEventListener('click', function(event) {
+          button.addEventListener('click', function (event) {
             let buttonClicked = event.target
-            let itemToRemoveIndex = i // Get the index of the item to be removed from the cartArray
+            let itemToRemoveIndex = i
             buttonClicked.parentElement.parentElement.remove()
-            cartArray.splice(itemToRemoveIndex, 1) // Remove the item from the cartArray
+            // Remove the item from the cartArray
+            cartArray.splice(itemToRemoveIndex, 1)
           })
         }
-        
-
-        
-
       });
     }
   });
