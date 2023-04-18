@@ -32,6 +32,7 @@ fetch('./js/data.json')
     for (let i = 0; i < cards.length; i++) {
       const card = cards[i];
 
+
       // Find the corresponding product for this card
       let product;
       if (i < loungeProducts.length) {
@@ -86,43 +87,24 @@ fetch('./js/data.json')
         for (let i = 0; i < cartArray.length; i++) {
           const cartItem = cartArray[i];
           const cartItemDiv = document.createElement("div");
-          cartItemDiv.classList.add("cart-item");
+          cartItemDiv.classList.add("cart-row");
 
-          // create a div for the cart item image
-          const itemImageDiv = document.createElement("div");
-          const itemImage = document.createElement("img");
-          itemImage.src = cartItem.image;
-          itemImageDiv.appendChild(itemImage);
-          cartItemDiv.appendChild(itemImageDiv);
+          const cartItemHTML = `
+            <div class="cart-item cart-column">
+               <img class="cart-item-image" src="${cartItem.image}" width="100" height="100">
+                <span class="cart-item-title">${cartItem.name}</span>
+                <span class="close"></span>
+              </div>
+                <span class="cart-price cart-column">R${cartItem.price}</span>
+                  <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                     </div>`;
 
-          // create a div for the cart item name
-          const itemNameDiv = document.createElement("div");
-          const itemName = document.createElement("p");
-          itemName.textContent = cartItem.name;
-          itemNameDiv.appendChild(itemName);
-          cartItemDiv.appendChild(itemNameDiv);
-
-          // create a div for the cart item price
-          const itemPriceDiv = document.createElement("div");
-          const itemPrice = document.createElement("p");
-          itemPrice.textContent = `R${cartItem.price}`;
-          itemPriceDiv.appendChild(itemPrice);
-          cartItemDiv.appendChild(itemPriceDiv);
-
+          cartItemDiv.innerHTML = cartItemHTML;
           cartItemsDiv.appendChild(cartItemDiv);
         }
-
-
-
-        // Add the selected product to the cart array
-        cartArray.push({
-          name: product.name,
-          price: product.price.toFixed(2),
-          image: product.image
-        });
-        console.log(`Added ${product.name} to cartArray`, cartArray);
       });
-
     }
   });
 // Get the modal
