@@ -3,27 +3,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let button = document.querySelector(".btn");
   let cover = document.querySelector(".cover");
   button.addEventListener("click", function () {
-  cover.classList.add("slideUp");
+    cover.classList.add("slideUp");
   });
-  });
-  // Fetch the product data from the JSON file
+});
+
+// Fetch the product data from the JSON file
 fetch('./js/data.json')
-// Parse the response as JSON
-.then(response => response.json())
-// Once the data is retrieved, loop through each product
-.then(products => {
-  // Categorize the products based on their IDs
-  const loungeProducts = products.filter(product => product.id >= 1 && product.id <= 10);
-  const diningProducts = products.filter(product => product.id >= 11 && product.id <= 20);
-  const studyProducts = products.filter(product => product.id >= 21 && product.id <= 30);
+  // Parse the response as JSON
+  .then(response => response.json())
+  // Once the data is retrieved, loop through each product
+  .then(products => {
+    // Categorize the products based on their IDs
+    const loungeProducts = products.filter(product => product.id >= 1 && product.id <= 10);
+    const diningProducts = products.filter(product => product.id >= 11 && product.id <= 20);
+    const studyProducts = products.filter(product => product.id >= 21 && product.id <= 30);
 
-  console.log("loungeProducts:", loungeProducts);
-  console.log("diningProducts:", diningProducts);
-  console.log("studyProducts:", studyProducts);
+    console.log("loungeProducts:", loungeProducts);
+    console.log("diningProducts:", diningProducts);
+    console.log("studyProducts:", studyProducts);
 
-
-      // Select all the card elements
+    // Select all the card elements
     const cards = document.querySelectorAll('.card');
+
+    // Create an empty cart array
+    let cartArray = [];
 
     // Loop through each card element and populate it with product data
     for (let i = 0; i < cards.length; i++) {
@@ -69,10 +72,82 @@ fetch('./js/data.json')
 
       // Add event listener to the "Add to Cart" button
       button.addEventListener("click", function () {
-        console.log(`Selected product: ${product.name}`);
-        console.log(`Price: R${product.price.toFixed(2)}`);
-        console.log(`Image source: ${product.image}`);
+        // Add the selected product to the cart array
+        cartArray.push({
+          name: product.name,
+          price: product.price.toFixed(2),
+          image: product.image
+        });
+        console.log(`Added ${product.name} to cartArray`, cartArray);
+
+        // Dynamically populate the cartItems div with the items in the cart array
+        const cartItemsDiv = document.querySelector(".cartItems");
+        cartItemsDiv.innerHTML = "";
+        for (let i = 0; i < cartArray.length; i++) {
+          const cartItem = cartArray[i];
+          const cartItemDiv = document.createElement("div");
+          cartItemDiv.classList.add("cart-item");
+
+          // create a div for the cart item image
+          const itemImageDiv = document.createElement("div");
+          const itemImage = document.createElement("img");
+          itemImage.src = cartItem.image;
+          itemImageDiv.appendChild(itemImage);
+          cartItemDiv.appendChild(itemImageDiv);
+
+          // create a div for the cart item name
+          const itemNameDiv = document.createElement("div");
+          const itemName = document.createElement("p");
+          itemName.textContent = cartItem.name;
+          itemNameDiv.appendChild(itemName);
+          cartItemDiv.appendChild(itemNameDiv);
+
+          // create a div for the cart item price
+          const itemPriceDiv = document.createElement("div");
+          const itemPrice = document.createElement("p");
+          itemPrice.textContent = `R${cartItem.price}`;
+          itemPriceDiv.appendChild(itemPrice);
+          cartItemDiv.appendChild(itemPriceDiv);
+
+          cartItemsDiv.appendChild(cartItemDiv);
+        }
+
+
+
+        // Add the selected product to the cart array
+        cartArray.push({
+          name: product.name,
+          price: product.price.toFixed(2),
+          image: product.image
+        });
+        console.log(`Added ${product.name} to cartArray`, cartArray);
       });
 
     }
   });
+// Get the modal
+let modal = document.getElementById("myModal");
+
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
