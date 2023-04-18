@@ -104,6 +104,18 @@ fetch('./js/data.json')
           cartItemDiv.innerHTML = cartItemHTML;
           cartItemsDiv.appendChild(cartItemDiv);
         }
+        // Get all the cart quantity input elements
+        const quantityInputs = document.querySelectorAll(".cart-quantity-input");
+
+        // Add an event listener to each input element
+        quantityInputs.forEach(function (input) {
+          input.addEventListener("change", function () {
+            // If the input value is 0 or negative, change it to 1
+            if (this.value <= 0) {
+              this.value = 1;
+            }
+          });
+        });
       });
     }
   });
@@ -133,3 +145,4 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
