@@ -26,6 +26,11 @@ fetch('./js/data.json')
     // Create an empty cart array
     let cartArray = [];
 
+
+
+
+
+
     // Loop through each card element and populate it with product data
     for (let i = 0; i < cards.length; i++) {
       const card = cards[i];
@@ -129,11 +134,14 @@ fetch('./js/data.json')
             buttonClicked.parentElement.parentElement.remove()
             // Remove the item from the cartArray
             cartArray.splice(itemToRemoveIndex, 1)
+            updateCartTotal()
           })
         }
       });
     }
   });
+
+
 
 
 // Get the modal
