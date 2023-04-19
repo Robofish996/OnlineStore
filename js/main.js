@@ -134,7 +134,6 @@ fetch('./js/data.json')
             buttonClicked.parentElement.parentElement.remove()
             // Remove the item from the cartArray
             cartArray.splice(itemToRemoveIndex, 1)
-            updateCartTotal()
           })
         }
       });
