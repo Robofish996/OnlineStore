@@ -91,6 +91,10 @@ fetch('./js/data.json')
         cartTotal += parseFloat(product.price.toFixed(2));
         console.log("Cart Total:", cartTotal);
 
+        // Display the total cart price in the span element with class "cart-total-price"
+        const cartTotalPriceSpan = document.querySelector(".cart-total-price");
+        cartTotalPriceSpan.textContent = "R" + cartTotal.toFixed(2);
+
         // Dynamically populate the cartItems div with the items in the cart array
         const cartItemsDiv = document.querySelector(".cartItems");
         cartItemsDiv.innerHTML = "";
@@ -118,6 +122,34 @@ fetch('./js/data.json')
 
 
         }
+        // Get the "Remove" buttons
+        let removeButtons = document.querySelectorAll(".btn-danger");
+
+        // Add an event listener to each "Remove" button
+        removeButtons.forEach(function (button, i) {
+          button.addEventListener("click", function (event) {
+            // Get the clicked button and the index of the item to remove
+            let buttonClicked = event.target;
+            let itemToRemoveIndex = i;
+
+            // Remove the item's row from the cart table
+            let cartRow = buttonClicked.parentElement.parentElement;
+            cartRow.remove();
+
+            // Remove the item from the cart array
+            let removedItem = cartArray.splice(itemToRemoveIndex, 1)[0];
+
+            // Subtract the price of the removed item from the cartTotal
+            cartTotal -= parseFloat(removedItem.price);
+
+            // Update the cart total price displayed in the HTML
+            let cartTotalPrice = document.querySelector(".cart-total-price");
+            cartTotalPrice.innerHTML = "$" + cartTotal.toFixed(2);
+
+            console.log("Cart Total:", cartTotal);
+            console.log(`Removed ${removedItem.name} from cartArray`, cartArray);
+          });
+        });
 
 
         ;
@@ -135,20 +167,11 @@ fetch('./js/data.json')
           });
         });
 
-        let removeCartItemButtons = document.getElementsByClassName('btn-danger')
-        for (let i = 0; i < removeCartItemButtons.length; i++) {
-          let button = removeCartItemButtons[i]
-          button.addEventListener('click', function (event) {
-            let buttonClicked = event.target
-            let itemToRemoveIndex = i
-            buttonClicked.parentElement.parentElement.remove()
-            // Remove the item from the cartArray
-            cartArray.splice(itemToRemoveIndex, 1)
-          })
-        }
-      });
+
+      })
     }
   });
+  
 
 
 
