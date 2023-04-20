@@ -152,6 +152,7 @@ fetch('./js/data.json')
         });
 
 
+
         ;
 
         // Get all the cart quantity input elements
@@ -171,7 +172,7 @@ fetch('./js/data.json')
       })
     }
   });
-  
+
 
 
 
