@@ -114,14 +114,14 @@ fetch('./js/data.json')
         }
 
         // Calculate the total cart price
-        let cartTotal = 0;
-        for (let i = 0; i < cartArray.length; i++) {
-          cartTotal += cartArray[i].price;
-        }
+let cartTotal = 0;
+for (let i = 0; i < cartArray.length; i++) {
+  cartTotal += cartArray[i].price;
+}
 
-        // Update the cart total price in the HTML
-        const cartTotalPrice = document.querySelector('.cart__total-price');
-        cartTotalPrice.textContent = `R${cartTotal.toFixed(2)}`;
+// Update the cart total price in the HTML
+const cartTotalPrice = document.querySelector('.cart__total-price');
+cartTotalPrice.textContent = `R${cartTotal.toFixed(2)}`;
 
         // Get all the cart quantity input elements
         const quantityInputs = document.querySelectorAll(".cart-quantity-input");
