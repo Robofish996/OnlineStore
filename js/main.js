@@ -74,7 +74,8 @@ fetch('./js/data.json')
       button.textContent = "Add to Cart"; // Add text to the button
       card.appendChild(button);
 
-
+      // Initialize cartTotal variable
+      let cartTotal = 0;
       // Add event listener to the "Add to Cart" button
       button.addEventListener("click", function () {
         // Add the selected product to the cart array
@@ -84,6 +85,11 @@ fetch('./js/data.json')
           image: product.image
         });
         console.log(`Added ${product.name} to cartArray`, cartArray);
+
+        // Calculate the total cart price
+
+        cartTotal += parseFloat(product.price.toFixed(2));
+        console.log("Cart Total:", cartTotal);
 
         // Dynamically populate the cartItems div with the items in the cart array
         const cartItemsDiv = document.querySelector(".cartItems");
@@ -113,15 +119,8 @@ fetch('./js/data.json')
 
         }
 
-        // Calculate the total cart price
-let cartTotal = 0;
-for (let i = 0; i < cartArray.length; i++) {
-  cartTotal += cartArray[i].price;
-}
 
-// Update the cart total price in the HTML
-const cartTotalPrice = document.querySelector('.cart__total-price');
-cartTotalPrice.textContent = `R${cartTotal.toFixed(2)}`;
+        ;
 
         // Get all the cart quantity input elements
         const quantityInputs = document.querySelectorAll(".cart-quantity-input");
