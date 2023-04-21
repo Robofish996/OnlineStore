@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 });
 
+// Create an empty cart array
+let cartArray = [];
+
+// Initialize cartTotal variable
+let cartTotal = 0;
+console.log(cartTotal);
 
 
 // Fetch the product data from the JSON file
@@ -20,22 +26,16 @@ fetch('./js/data.json')
     const diningProducts = products.filter(product => product.id >= 11 && product.id <= 20);
     const studyProducts = products.filter(product => product.id >= 21 && product.id <= 30);
 
+    console.log(loungeProducts);
+    console.log(diningProducts);
+    console.log(studyProducts);
+
+
     // Select all the card elements
     const cards = document.querySelectorAll('.card');
-
-    // Create an empty cart array
-    let cartArray = [];
-
-
-
-
-
-
     // Loop through each card element and populate it with product data
     for (let i = 0; i < cards.length; i++) {
       const card = cards[i];
-
-
       // Find the corresponding product for this card
       let product;
       if (i < loungeProducts.length) {
@@ -45,12 +45,10 @@ fetch('./js/data.json')
       } else {
         product = studyProducts[i - loungeProducts.length - diningProducts.length];
       }
-
       // Set the card image
       const img = document.createElement('img');
       img.src = product.image;
       card.appendChild(img);
-
       // Set the card title
       const title = document.createElement('h2');
       title.textContent = product.name;
@@ -65,7 +63,6 @@ fetch('./js/data.json')
       const price = document.createElement('p');
       price.textContent = `R${product.price.toFixed(2)}`;
       card.appendChild(price);
-
       // Add an "Add to Cart" button
       const button = document.createElement('button');
       button.classList.add('add-to-cart'); // Add the class "add-to-cart"
@@ -74,26 +71,17 @@ fetch('./js/data.json')
       button.textContent = "Add to Cart"; // Add text to the button
       card.appendChild(button);
 
-      // Initialize cartTotal variable
-      let cartTotal = 0;
+
       // Add event listener to the "Add to Cart" button
       button.addEventListener("click", function () {
         // Add the selected product to the cart array
         cartArray.push({
           name: product.name,
           price: product.price.toFixed(2),
-          image: product.image
+          image: product.image,
+          quantity: 1 // Initialize quantity to 1
         });
         console.log(`Added ${product.name} to cartArray`, cartArray);
-
-        // Calculate the total cart price
-
-        cartTotal += parseFloat(product.price.toFixed(2));
-        console.log("Cart Total:", cartTotal);
-
-        // Display the total cart price in the span element with class "cart-total-price"
-        const cartTotalPriceSpan = document.querySelector(".cart-total-price");
-        cartTotalPriceSpan.textContent = "R" + cartTotal.toFixed(2);
 
         // Dynamically populate the cartItems div with the items in the cart array
         const cartItemsDiv = document.querySelector(".cartItems");
@@ -104,74 +92,70 @@ fetch('./js/data.json')
           cartItemDiv.classList.add("cart-row");
 
           const cartItemHTML = `
-            <div class="cart-item cart-column">
-               <img class="cart-item-image" src="${cartItem.image}" width="100" height="100">
-                <span class="cart-item-title">${cartItem.name}</span>
-                <span class="close"></span>
-              </div>
-                <span class="cart-price cart-column">R${cartItem.price}</span>
-                  <div class="cart-quantity cart-column">
-                    <input class="cart-quantity-input" type="number" value="1">
-                    <button class="btn btn-danger" type="button">REMOVE</button>
-                     </div>`;
+              <div class="cart-item cart-column">
+                 <img class="cart-item-image" src="${cartItem.image}" width="100" height="100">
+                  <span class="cart-item-title">${cartItem.name}</span>
+                  <span class="close"></span>
+                </div>
+                  <span class="cart-price cart-column">R${cartItem.price}</span>
+                    <div class="cart-quantity cart-column">
+                    <span class="cart-quantity-input" type="number">${cartItem.quantity}</span>
+                      
+                      <button class="btn btn-danger" type="button">REMOVE</button>
+                       </div>`;
 
 
           cartItemDiv.innerHTML = cartItemHTML;
           cartItemsDiv.appendChild(cartItemDiv);
 
-
-
         }
-        // Get the "Remove" buttons
-        let removeButtons = document.querySelectorAll(".btn-danger");
 
-        // Add an event listener to each "Remove" button
-        removeButtons.forEach(function (button, i) {
-          button.addEventListener("click", function (event) {
-            // Get the clicked button and the index of the item to remove
-            let buttonClicked = event.target;
-            let itemToRemoveIndex = i;
-
-            // Remove the item's row from the cart table
-            let cartRow = buttonClicked.parentElement.parentElement;
-            cartRow.remove();
-
-            // Remove the item from the cart array
-            let removedItem = cartArray.splice(itemToRemoveIndex, 1)[0];
-
-            // Subtract the price of the removed item from the cartTotal
-            cartTotal -= parseFloat(removedItem.price);
-
-            // Update the cart total price displayed in the HTML
-            let cartTotalPrice = document.querySelector(".cart-total-price");
-            cartTotalPrice.innerHTML = "$" + cartTotal.toFixed(2);
-
-            console.log("Cart Total:", cartTotal);
-            console.log(`Removed ${removedItem.name} from cartArray`, cartArray);
-          });
+        // Recalculate the total cart price
+        cartTotal = 0;
+        cartArray.forEach(function (item) {
+          cartTotal += parseFloat(item.price) * parseInt(item.quantity);
         });
+        console.log("Cart Total:", cartTotal);
+
+        // Display the total cart price in the span element with class "cart-total-price"
+        const cartTotalPriceSpan = document.querySelector(".cart-total-price");
+        cartTotalPriceSpan.textContent = "R" + cartTotal.toFixed(2);
 
 
-
-        ;
-
-        // Get all the cart quantity input elements
-        const quantityInputs = document.querySelectorAll(".cart-quantity-input");
-
-        // Add an event listener to each input element
-        quantityInputs.forEach(function (input) {
-          input.addEventListener("change", function () {
-            // If the input value is 0 or negative, change it to 1
-            if (this.value <= 0) {
-              this.value = 1;
+        // Get the "REMOVE" buttons and add a click event listener to each
+        let removeCartItemButtons = document.getElementsByClassName('btn-danger')
+        for (let i = 0; i < removeCartItemButtons.length; i++) {
+          let button = removeCartItemButtons[i]
+          button.addEventListener('click', function (event) {
+            let buttonClicked = event.target
+            let itemToRemoveIndex = i
+            buttonClicked.parentElement.parentElement.remove()
+            // Remove the item from the cartArray
+            cartArray.splice(itemToRemoveIndex, 1)
+            // Update the total price
+            let totalPrice = 0
+            for (let i = 0; i < cartArray.length; i++) {
+              totalPrice += cartArray[i].price * cartArray[i].quantity
             }
-          });
-        });
+            document.querySelector(".cart-total-price").innerHTML = `R${totalPrice}`
+          })
+        }
 
+        // Update the total price initially
+        let totalPrice = 0
+        for (let i = 0; i < cartArray.length; i++) {
+          totalPrice += cartArray[i].price * cartArray[i].quantity
+        }
+        document.querySelector(".cart-total-price").innerHTML = `R${totalPrice}`
 
       })
     }
-  });
+   
+
+
+
+
+
 
 
 
@@ -203,4 +187,3 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
-
