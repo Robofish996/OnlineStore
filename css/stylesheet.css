@@ -92,9 +92,31 @@ header {
   justify-content: space-between;
   background-color: #888;
   position: fixed;
+  padding: 1rem;
 }
-main{
+
+main {
   margin-top: 100px;
+}
+
+/*styling hero banner*/
+.hero-image {
+  background-image: url('./images/banner-removebg-preview.png');
+  width: 100%;
+  height:400px ;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: 'Calligraphy', sans-serif;
 }
 
 /* Styling for the navbar links */
@@ -148,52 +170,52 @@ nav a:hover {
 .cart a {
   font-size: 20px;
   color: black;
-  }
-  
-  /* Setting up the body style */
-  body {
+}
+
+/* Setting up the body style */
+body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
-  }
-  
-  /* Styling for the main heading after the slide-up transition */
-  .headingAfterSlide {
+  background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201), white) !important;
+}
+
+/* Styling for the main heading after the slide-up transition */
+.headingAfterSlide {
   color: black;
   font-size: 50px;
   text-decoration: underline;
-  }
-  
+}
 
-  
-  /* Styling for the header of the cards section */
-  .cHeader {
+
+
+/* Styling for the header of the cards section */
+.cHeader {
   color: black;
   font-family: 'Times New Roman', Times, serif;
   text-decoration: underline;
   font-weight: bold;
   font-size: 38px;
-  }
-  
-  /* Styling for the text inside the cards section */
-  .cText {
+}
+
+/* Styling for the text inside the cards section */
+.cText {
   color: black;
   font-weight: bold;
-  }
-  
-  /* Styling for the individual cards */
-  .card {
+}
+
+/* Styling for the individual cards */
+.card {
   margin: 10px;
   justify-content: center;
-  }
-  
-  /* Styling for the section headings */
-  .sectionHeadings {
+}
+
+/* Styling for the section headings */
+.sectionHeadings {
   text-align: center;
   text-decoration: underline;
-  }
-  
-  /* Styling for the button */
-  .button {
+}
+
+/* Styling for the button */
+.button {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -204,153 +226,153 @@ nav a:hover {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  }
-  
-  /* Styling for the cards on hover */
-  .card {
-  transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-  transform: scale(1.05);
-  }
+}
 
-  .card button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 200px; 
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-  }
-  
-  .cart-header {
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #333;
+/* Styling for the cards on hover */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #3e8e41;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
 }
 
 .cart-column {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-    margin-right: 1.5em;
-    padding-bottom: 10px;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .cart-row {
-    display: flex;
+  display: flex;
 }
 
 .cart-item {
-    width: 45%;
+  width: 45%;
 }
 
 .cart-price {
-    width: 20%;
-    font-size: 1.2em;
-    color: #333;
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
 }
 
 .cart-quantity {
-    width: 35%;
+  width: 35%;
 }
 
 .cart-item-title {
-    color: #333;
-    margin-left: .5em;
-    font-size: 1.2em;
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
 }
 
 .cart-item-image {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .btn-danger {
-    color: white;
-    background-color: #EB5757;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+  background-color: #CC4C4C;
 }
 
 .cart-quantity-input {
-    height: 34px;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid #56CCF2;
-    background-color: #eee;
-    color: #333;
-    padding: 0;
-    text-align: center;
-    font-size: 1.2em;
-    margin-right: 25px;
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
 }
 
 .cart-row:last-child {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .cart-row:last-child .cart-column {
-    border: none;
+  border: none;
 }
 
 .cart-total {
-    text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .cart-total-title {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: black;
-    margin-right: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
 }
 
 .cart-total-price {
-    color: #333;
-    font-size: 1.1em;
+  color: #333;
+  font-size: 1.1em;
 }
 
 .btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
 }
