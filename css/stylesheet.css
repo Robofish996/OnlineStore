@@ -90,7 +90,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 10px;
+  background-color: #888;
+  position: fixed;
+}
+main{
+  margin-top: 100px;
 }
 
 /* Styling for the navbar links */
@@ -159,30 +163,7 @@ nav a:hover {
   text-decoration: underline;
   }
   
-  /* Styling for the carousel section */
-  .carousel {
-  width: 80%;
-  height: 500px;
-  margin: 0 auto;
-  overflow: hidden;
-  }
-  
-  /* Styling for the caption of the carousel */
-  .carousel-caption {
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: black;
-  text-align: center;
-  }
-  
-  /* Styling for the images inside the carousel */
-  .carousel-item img {
-  height: 500px;
-  width: 100%;
-  opacity: 90%;
-  }
+
   
   /* Styling for the header of the cards section */
   .cHeader {
