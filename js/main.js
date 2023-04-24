@@ -50,7 +50,7 @@ fetch('./js/data.json')
       img.src = product.image;
       card.appendChild(img);
       // Set the card title
-      const title = document.createElement('h2');
+      const title = document.createElement('h3');
       title.textContent = product.name;
       card.appendChild(title);
 

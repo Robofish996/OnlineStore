@@ -2,212 +2,212 @@
     {
         "id": 1, 
         "image": "./css/images/lounge_items/couchOne Black.jpg",
-        "name": "1",
-        "description": "Product description 1",
-        "price": 49.99
+        "name": "Cloudy Comfort",
+        "description": "Cozy up with Cloudy Comfort.",
+        "price": 19999.99
     },
     {
         "id": 2,
-        "name": "2",
+        "name": "Lounge Lush",
         "image": "./css/images/lounge_items/couchOne Brown.jpg",
-        "description": "Product description 2",
-        "price": 99.99
+        "description": "Lounge in luxury with Lounge Lush.",
+        "price": 19999.99
     },
     {
         "id": 3,
-        "name": "3",
-        "image": "./css/images/lounge_items/curve_single.jpg",
-        "description": "Product description 3",
-        "price": 149.99
+        "name": "Retro Rest",
+        "image": "./css/images/lounge_items/oliveCouch.jpg",
+        "description": "Rest easy with Retro Rest. ",
+        "price": 7899.99
     },
     {
         "id": 4,
-        "name": "4",
-        "image": "./css/images/lounge_items/double_combo.jpg",
-        "description": "Product description 4",
-        "price": 149.99
+        "name": "Zen Seating",
+        "image": "./css/images/lounge_items/aquaBlue.jpg",
+        "description": "Find your zen with Zen Seating.",
+        "price": 8999.99
     },
     {
         "id": 5,
-        "name": "5 Seater",
-        "image": "./css/images/lounge_items/hassan_ouajbir.jpg",
-        "description": "Product description 5",
-        "price": 149.99
+        "name": "Chill Out Sofa",
+        "image": "./css/images/lounge_items/doubleSeater.jpg",
+        "description": "Chill out on Chill Out Sofa.",
+        "price": 7599.99
     },
     {
         "id": 6,
-        "name": "5 Seater",
-        "image": "./css/images/lounge_items/Lshape_brown.jpg",
-        "description": "Product description 6",
-        "price": 149.99
+        "name": "Urban Ease",
+        "image": "./css/images/lounge_items/lazyDouble.jpg",
+        "description": "Urban comfort with Urban Ease.",
+        "price": 11999.99
     },
     {
         "id": 7,
-        "name": "5 Seater",
-        "image": "./css/images/lounge_items/singleSeater.jpg",
-        "description": "Product description 7",
-        "price": 149.99
+        "name": "Serene Spot",
+        "image": "./css/images/lounge_items/leatherCouch.jpg",
+        "description": "Relax in serenity with Serene Spot.",
+        "price": 8999.99
     },
     {
         "id": 8,
-        "name": "5 Seater",
-        "image": "./css/images/lounge_items/suite combo.jpg",
-        "description": "Product description 8",
-        "price": 149.99
+        "name": "Cozy Corner",
+        "image": "./css/images/lounge_items/lShapeCouch.jpg",
+        "description": "Get comfy in Cozy Corner.",
+        "price": 13999.99
     },
     {
         "id": 9,
-        "name": "5 Seater",
-        "image": "./css/images/lounge_items/triple combo.jpg",
-        "description": "Product description 9",
-        "price": 149.99
+        "name": "Haven Sofa",
+        "image": "./css/images/lounge_items/pleadedthreeseater.jpg",
+        "description": "Escape to Haven Sofa.",
+        "price": 9999.99
     },
     {
         "id": 10,
-        "name": "5 Seater",
-        "image": "./css/images/lounge_items/triple combo.jpg",
-        "description": "Product description 10 ",
-        "price": 149.99
+        "name": "Comfort Cove",
+        "image": "./css/images/lounge_items/rusticDouble.jpg",
+        "description": "Sink into comfort with Comfort Cove.",
+        "price": 9999.99
     },
     {
         "id": 11,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 11",
-        "price": 149.99
+        "name": "Rustic Charm",
+        "image": "./css/images/dinningRoom_items/glassRoundTable.jpg",
+        "description": "Rustic charm for every home.",
+        "price": 2999.99
     },
     {
         "id": 12,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 12",
-        "price": 149.99
+        "name": "Elegant Edge",
+        "image": "./css/images/dinningRoom_items/glassSixSeater.jpg",
+        "description": "Add elegance with Elegant Edge.",
+        "price": 7999.99
     },
     {
         "id": 13,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 13",
-        "price": 149.99
+        "name": "Modern Chic",
+        "image": "./css/images/dinningRoom_items/higheightseater.jpg",
+        "description": "Modern chic for your space.",
+        "price": 13999.99
     },
     {
         "id": 14,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 14",
-        "price": 149.99
+        "name": "Classic Chic",
+        "image": "./css/images/dinningRoom_items/paddedSixSeater.jpg",
+        "description": "Classic chic, timeless design.",
+        "price": 9999.99
     },
     {
         "id": 15,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 15",
-        "price": 149.99
+        "name": "Simple Style",
+        "image": "./css/images/dinningRoom_items/pleadedFourSeater.jpg",
+        "description": "Simple style, easy living.",
+        "price": 4999.99
     },
     {
         "id": 16,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 16",
-        "price": 149.99
+        "name": "Vintage Vibe",
+        "image": "./css/images/dinningRoom_items/roundTable.jpg",
+        "description": "Vintage vibe, unique flair.",
+        "price": 3999.99
     },
     {
         "id": 17,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 17",
-        "price": 149.99
+        "name": "Coastal Cool",
+        "image": "./css/images/dinningRoom_items/simpleWooden.jpg",
+        "description": "Coastal cool for any decor.",
+        "price": 8999.99
     },
     {
         "id": 18,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 18",
-        "price": 149.99
+        "name": "Timeless Look",
+        "image": "./css/images/dinningRoom_items/squareWooden.jpg",
+        "description": "Timeless look, lasting style.",
+        "price": 13333.99
     },
     {
         "id": 19,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 19",
-        "price": 149.99
+        "name": "Industrial Luxe",
+        "image": "./css/images/dinningRoom_items/twoSeater.jpg",
+        "description": "Industrial luxe, chic appeal.",
+        "price": 7599.99
     },
     {
         "id": 20,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 20",
-        "price": 149.99
+        "name": "Art Deco Style",
+        "image": "./css/images/dinningRoom_items/whitetable4seater.jpg",
+        "description": "Art deco style, classic glam.",
+        "price": 17999.99
     },
     {
         "id": 21,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 21",
-        "price": 149.99
+        "name": "Classic Desk",
+        "image": "./css/images/studyrooms/deskrs.jpg",
+        "description": "Classic style, functional form.",
+        "price": 1499.99
     },
     {
         "id": 22,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 22",
-        "price": 149.99
+        "name": "Modern Work",
+        "image": "./css/images/studyrooms/doubleDesk.jpg",
+        "description": "Modern,endless possibilities.",
+        "price": 2599.99
     },
     {
         "id": 23,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 23",
-        "price": 149.99
+        "name": "Sleek Surface",
+        "image": "./css/images/studyrooms/glassDesk.jpg",
+        "description": "Sleek surfaces for every need.",
+        "price": 1899.99
     },
     {
         "id": 24,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 24",
-        "price": 149.99
+        "name": "Cozy Corner",
+        "image": "./css/images/studyrooms/highDesk.jpg",
+        "description": "Cozy corners for focused work.",
+        "price": 1299.99
     },
     {
         "id": 25,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 25",
-        "price": 149.99
+        "name": "Chic Table",
+        "image": "./css/images/studyrooms/singleDrawer.jpg",
+        "description": "Chic tables, elegant design.",
+        "price": 999.99
     },
     {
         "id": 26,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 26",
-        "price": 149.99
+        "name": "Timeless Style",
+        "image": "./css/images/studyrooms/woodenwithdrawers.jpg",
+        "description": "Timeless style for every office.",
+        "price": 1599.99
     },
     {
         "id": 27,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 27",
-        "price": 149.99
+        "name": "Shelfie Chic",
+        "image": "./css/images/studyrooms/officecompartment.jpg",
+        "description": "a cozy home for books.",
+        "price": 499.99
     },
     {
         "id": 28,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 28",
-        "price": 149.99
+        "name": "Shelfie Chic",
+        "image": "./css/images/studyrooms/sixcubeshelve.jpg",
+        "description": "stylish storage solution.",
+        "price": 699.99
     },
     {
         "id": 29,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 29",
-        "price": 149.99
+        "name": "Trio Shelves",
+        "image": "./css/images/studyrooms/threeshelvepack.jpg",
+        "description": "Maximize space with Trio Shelves.",
+        "price": 499.99
     },
     {
         "id": 30,
-        "name": "5 Seater",
-        "image": "./css/images/dinningRoom_items/roundtable.jpg",
-        "description": "Product description 30",
-        "price": 149.99
+        "name": "Duo Shelves",
+        "image": "./css/images/studyrooms/twoPackshelves.jpg",
+        "description": "Maximize space with Duo Shelves.",
+        "price": 359.99
     }
 
 ]
