@@ -151,7 +151,7 @@ fetch('./js/data.json')
       })
     }
    
-
+  })
 
 
 
