@@ -158,15 +158,6 @@ fetch('../js/data.json')
             })
         }
 
-
-
-
-
-
-
-
-
-
         // Initialize cartTotal variable
         let cartTotal = 0;
         console.log(cartTotal);
@@ -228,6 +219,7 @@ fetch('../js/data.json')
                     }
                     document.querySelector(".cart-total-price").innerHTML = `R${totalPrice}`
                     localStorage.setItem('cart', JSON.stringify(cartArray));
+
                 })
 
 
