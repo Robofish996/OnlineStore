@@ -1,7 +1,7 @@
 [
     {
         "id": 1, 
-        "image": "./css/images/lounge_items/couchOne Black.jpg",
+        "image": "../css/images/lounge_items/couchOne Black.jpg",
         "name": "Cloudy Comfort",
         "description": "Cozy up with Cloudy Comfort.",
         "price": 19999.99
@@ -9,203 +9,203 @@
     {
         "id": 2,
         "name": "Lounge Lush",
-        "image": "./css/images/lounge_items/couchOne Brown.jpg",
+        "image": "../css/images/lounge_items/couchOne Brown.jpg",
         "description": "Lounge in luxury with Lounge Lush.",
         "price": 19999.99
     },
     {
         "id": 3,
         "name": "Retro Rest",
-        "image": "./css/images/lounge_items/oliveCouch.jpg",
+        "image": "../css/images/lounge_items/oliveCouch.jpg",
         "description": "Rest easy with Retro Rest. ",
         "price": 7899.99
     },
     {
         "id": 4,
         "name": "Zen Seating",
-        "image": "./css/images/lounge_items/aquaBlue.jpg",
+        "image": "../css/images/lounge_items/aquaBlue.jpg",
         "description": "Find your zen with Zen Seating.",
         "price": 8999.99
     },
     {
         "id": 5,
         "name": "Chill Out Sofa",
-        "image": "./css/images/lounge_items/doubleSeater.jpg",
+        "image": "../css/images/lounge_items/doubleSeater.jpg",
         "description": "Chill out on Chill Out Sofa.",
         "price": 7599.99
     },
     {
         "id": 6,
         "name": "Urban Ease",
-        "image": "./css/images/lounge_items/lazyDouble.jpg",
+        "image": "../css/images/lounge_items/lazyDouble.jpg",
         "description": "Urban comfort with Urban Ease.",
         "price": 11999.99
     },
     {
         "id": 7,
         "name": "Serene Spot",
-        "image": "./css/images/lounge_items/leatherCouch.jpg",
+        "image": "../css/images/lounge_items/leatherCouch.jpg",
         "description": "Relax in serenity with Serene Spot.",
         "price": 8999.99
     },
     {
         "id": 8,
         "name": "Cozy Corner",
-        "image": "./css/images/lounge_items/lShapeCouch.jpg",
+        "image": "../css/images/lounge_items/lShapeCouch.jpg",
         "description": "Get comfy in Cozy Corner.",
         "price": 13999.99
     },
     {
         "id": 9,
         "name": "Haven Sofa",
-        "image": "./css/images/lounge_items/pleadedthreeseater.jpg",
+        "image": "../css/images/lounge_items/pleadedthreeseater.jpg",
         "description": "Escape to Haven Sofa.",
         "price": 9999.99
     },
     {
         "id": 10,
         "name": "Comfort Cove",
-        "image": "./css/images/lounge_items/rusticDouble.jpg",
+        "image": "../css/images/lounge_items/rusticDouble.jpg",
         "description": "Sink into comfort with Comfort Cove.",
         "price": 9999.99
     },
     {
         "id": 11,
         "name": "Rustic Charm",
-        "image": "./css/images/dinningRoom_items/glassRoundTable.jpg",
+        "image": "../css/images/dinningRoom_items/glassRoundTable.jpg",
         "description": "Rustic charm for every home.",
         "price": 2999.99
     },
     {
         "id": 12,
         "name": "Elegant Edge",
-        "image": "./css/images/dinningRoom_items/glassSixSeater.jpg",
+        "image": "../css/images/dinningRoom_items/glassSixSeater.jpg",
         "description": "Add elegance with Elegant Edge.",
         "price": 7999.99
     },
     {
         "id": 13,
         "name": "Modern Chic",
-        "image": "./css/images/dinningRoom_items/higheightseater.jpg",
+        "image": "../css/images/dinningRoom_items/higheightseater.jpg",
         "description": "Modern chic for your space.",
         "price": 13999.99
     },
     {
         "id": 14,
         "name": "Classic Chic",
-        "image": "./css/images/dinningRoom_items/paddedSixSeater.jpg",
+        "image": "../css/images/dinningRoom_items/paddedSixSeater.jpg",
         "description": "Classic chic, timeless design.",
         "price": 9999.99
     },
     {
         "id": 15,
         "name": "Simple Style",
-        "image": "./css/images/dinningRoom_items/pleadedFourSeater.jpg",
+        "image": "../css/images/dinningRoom_items/pleadedFourSeater.jpg",
         "description": "Simple style, easy living.",
         "price": 4999.99
     },
     {
         "id": 16,
         "name": "Vintage Vibe",
-        "image": "./css/images/dinningRoom_items/roundTable.jpg",
+        "image": "../css/images/dinningRoom_items/roundTable.jpg",
         "description": "Vintage vibe, unique flair.",
         "price": 3999.99
     },
     {
         "id": 17,
         "name": "Coastal Cool",
-        "image": "./css/images/dinningRoom_items/simpleWooden.jpg",
+        "image": "../css/images/dinningRoom_items/simpleWooden.jpg",
         "description": "Coastal cool for any decor.",
         "price": 8999.99
     },
     {
         "id": 18,
         "name": "Timeless Look",
-        "image": "./css/images/dinningRoom_items/squareWooden.jpg",
+        "image": "../css/images/dinningRoom_items/squareWooden.jpg",
         "description": "Timeless look, lasting style.",
         "price": 13333.99
     },
     {
         "id": 19,
         "name": "Industrial Luxe",
-        "image": "./css/images/dinningRoom_items/twoSeater.jpg",
+        "image": "../css/images/dinningRoom_items/twoSeater.jpg",
         "description": "Industrial luxe, chic appeal.",
         "price": 7599.99
     },
     {
         "id": 20,
         "name": "Art Deco Style",
-        "image": "./css/images/dinningRoom_items/whitetable4seater.jpg",
+        "image": "../css/images/dinningRoom_items/whitetable4seater.jpg",
         "description": "Art deco style, classic glam.",
         "price": 17999.99
     },
     {
         "id": 21,
         "name": "Classic Desk",
-        "image": "./css/images/studyrooms/deskrs.jpg",
+        "image": "../css/images/studyrooms/deskrs.jpg",
         "description": "Classic style, functional form.",
         "price": 1499.99
     },
     {
         "id": 22,
         "name": "Modern Work",
-        "image": "./css/images/studyrooms/doubleDesk.jpg",
+        "image": "../css/images/studyrooms/doubleDesk.jpg",
         "description": "Modern,endless possibilities.",
         "price": 2599.99
     },
     {
         "id": 23,
         "name": "Sleek Surface",
-        "image": "./css/images/studyrooms/glassDesk.jpg",
+        "image": "../css/images/studyrooms/glassDesk.jpg",
         "description": "Sleek surfaces for every need.",
         "price": 1899.99
     },
     {
         "id": 24,
         "name": "Cozy Corner",
-        "image": "./css/images/studyrooms/highDesk.jpg",
+        "image": "../css/images/studyrooms/highDesk.jpg",
         "description": "Cozy corners for focused work.",
         "price": 1299.99
     },
     {
         "id": 25,
         "name": "Chic Table",
-        "image": "./css/images/studyrooms/singleDrawer.jpg",
+        "image": "../css/images/studyrooms/singleDrawer.jpg",
         "description": "Chic tables, elegant design.",
         "price": 999.99
     },
     {
         "id": 26,
         "name": "Timeless Style",
-        "image": "./css/images/studyrooms/woodenwithdrawers.jpg",
+        "image": "../css/images/studyrooms/woodenwithdrawers.jpg",
         "description": "Timeless style for every office.",
         "price": 1599.99
     },
     {
         "id": 27,
         "name": "Shelfie Chic",
-        "image": "./css/images/studyrooms/officecompartment.jpg",
+        "image": "../css/images/studyrooms/officecompartment.jpg",
         "description": "a cozy home for books.",
         "price": 499.99
     },
     {
         "id": 28,
         "name": "Shelfie Chic",
-        "image": "./css/images/studyrooms/sixcubeshelve.jpg",
+        "image": "../css/images/studyrooms/sixcubeshelve.jpg",
         "description": "stylish storage solution.",
         "price": 699.99
     },
     {
         "id": 29,
         "name": "Trio Shelves",
-        "image": "./css/images/studyrooms/threeshelvepack.jpg",
+        "image": "../css/images/studyrooms/threeshelvepack.jpg",
         "description": "Maximize space with Trio Shelves.",
         "price": 499.99
     },
     {
         "id": 30,
         "name": "Duo Shelves",
-        "image": "./css/images/studyrooms/twoPackshelves.jpg",
+        "image": "../css/images/studyrooms/twoPackshelves.jpg",
         "description": "Maximize space with Duo Shelves.",
         "price": 359.99
     }
