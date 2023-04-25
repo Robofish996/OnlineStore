@@ -171,7 +171,7 @@
     /* Setting up the body style */
     body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
+    
     }
     
     /* Styling for the main heading after the slide-up transition */
@@ -184,7 +184,7 @@
       /*styling hero banner*/
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("./images/lounge_option.jpg");
+  background-image:linear-gradient(rgba(177, 177, 177, 0.7), rgba(168, 168, 168, 0.7)),  url("./images/lounge_option.jpg");
 
   
   height: 800px;
