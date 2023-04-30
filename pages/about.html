@@ -1,30 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/aboutUs.css">
+  <link rel="stylesheet" type="text/css" href="../css/fontawesome-free-6.4.0-web/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/calligraphy-2" rel="stylesheet">
+
+  <title>About Dream home</title>
 </head>
 <body>
-    <h1 class="headingAfterSlide">Dream Home</h1>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./about.html">About</a>
-                </li>
-            </ul>
-        </nav>
-    </div> 
+
+    <header class="fixed-top">
+        <h1 class="headingAfterSlide">Dream Home</h1>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cart">
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn"><span class="fa fa-shopping-cart"></span></button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 class="section-header">CART</h2>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+
+                    <div class="cartItems">
+
+                    </div>
+
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price"></span>
+                    </div>
+                    <button onclick="purchaseButton()" class="btn btn-primary btn-purchase"
+                        type="button">PURCHASE</button>
+                </div>
+
+
+    </header>
+    <main>
+        <H3 class="bHeading">About Us</H3>
+
+        <div class="container container-fluid">
+            <video class="video"  autoplay>
+                <source src="../css/videos/aboutUsvideo_final.mp4" type="video/mp4">
+            </video>
+            <h4 class="bHeading">Who are we ?</h4>
+            <p class="mt-4">
+                Welcome to Dream Home, your one-stop shop for all things home decor and furnishings. We are passionate
+                about creating spaces that reflect our customers' unique styles and personalities, and we're committed
+                to making the process of designing your dream home as easy and enjoyable as possible.
+            </p>
+            <p>
+                Our mission is simple: to provide high-quality, stylish home decor and furnishings at affordable prices,
+                while delivering exceptional customer service. We believe that everyone deserves to live in a home that
+                they love, and we're here to help make that dream a reality.
+            </p>
+            <p>
+                At Dream Home, we offer a wide range of products, from furniture to bedding to wall decor, all carefully
+                curated to ensure that they meet our high standards for quality and style. Whether you're looking to
+                redecorate an entire room or just add a few finishing touches, we have everything you need to create a
+                space that you'll be proud to call home.
+            </p>
+
+
+
+            <p> We're committed to building long-term relationships with our customers, and we take pride in going above
+                and beyond to ensure that each and every person who shops with us has a positive experience. So whether
+                you're a first-time shopper or a loyal customer, we're here to help you create the home of your dreams.
+            </p>
+
+            <p>
+                Dream Home was founded in 2010 by a group of friends who shared a passion for home decor and design. Their
+                goal was to create a store that offered high-quality, stylish products at affordable prices, while also
+                providing exceptional customer service. They started small, with just a few products and a small storefront,
+                but word quickly spread about their unique offerings and commitment to customer satisfaction.
+            </p>
+            <p>
+                Over the years, Dream Home has grown into a leading home decor and furnishings retailer, with multiple
+                locations across the country and a thriving online store. Despite their growth, the founders have remained
+                committed to their original mission, and they continue to carefully curate each and every product they offer
+                to ensure that it meets their high standards for quality and style.
+            </p>
+            <p>
+                One of the keys to Dream Home's success has been their ability to stay ahead of the curve when it comes to
+                design trends. They work closely with top designers and suppliers to ensure that they always have the latest
+                and greatest products in stock, and they're constantly updating their offerings to reflect the changing
+                needs and tastes of their customers.
+            </p>
+            <p>
+                But perhaps the most important factor in Dream Home's success has been their unwavering commitment to
+                customer service. From the moment a customer walks through the door (or visits the website), they're greeted
+                with a warm welcome and a willingness to go above and beyond to help them find exactly what they're looking
+                for. And if a customer ever has a question or concern, Dream Home's friendly and knowledgeable staff are
+                always happy to help.
+            </p>
+            <p>
+
+                Thanks to their dedication to quality, style, and customer service, Dream Home has become a go-to
+                destination for anyone looking to create a beautiful and comfortable home. And as they continue to grow and
+                evolve, they remain committed to their founding principles of affordability, style, and exceptional customer
+                service.
+            </p>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+    <footer class="mt-5">
+        <a href="mailto:Matthew.A.Riddle@outlook.com" target="_blank" class="iconAchors"><img class="icons"
+                src="../css/icons/Outlook_icon-icons.com_68993.png" alt="Mathew Riddles Email"></a>
+        <a href="mailto:Matthew.A.Riddle@outlook.com" target="_blank" class="iconAchors"><img class="icons"
+                src="../css/icons/facebook-app-symbol.png" alt="facebook-app-symbol"></a>
+        <a href="mailto:Matthew.A.Riddle@outlook.com" target="_blank" class="iconAchors"><img class="icons"
+                src="../css/icons/twitter-sign.png" alt="twitter-sign"></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/data.json"></script>
 </body>
 </html>
