@@ -162,7 +162,7 @@
     },
     {
         "id": 24,
-        "name": "Cozy Corner",
+        "name": "High Sights",
         "image": "../css/images/studyrooms/highDesk.jpg",
         "description": "Cozy corners for focused work.",
         "price": 1299.99
@@ -190,7 +190,7 @@
     },
     {
         "id": 28,
-        "name": "Shelfie Chic",
+        "name": "Cubical Chic",
         "image": "../css/images/studyrooms/sixcubeshelve.jpg",
         "description": "stylish storage solution.",
         "price": 699.99

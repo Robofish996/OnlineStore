@@ -220,25 +220,16 @@
     display: flex;
     justify-content: space-between;
   }
-  
-
-  div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 300px;
+  .lightbox {
+    margin: 0 auto;
+    width: 80vw;
+    height: fit-content;
   }
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  div.desc {
-    padding: 15px;
+  h3{
     text-align: center;
+    text-decoration: underline;
   }
+
   footer{
 
     align-items: center;
