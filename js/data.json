@@ -185,14 +185,14 @@
         "id": 27,
         "name": "Shelfie Chic",
         "image": "../css/images/studyrooms/officecompartment.jpg",
-        "description": "a cozy home for books.",
+        "description": "A cozy home for books.",
         "price": 499.99
     },
     {
         "id": 28,
         "name": "Cubical Chic",
         "image": "../css/images/studyrooms/sixcubeshelve.jpg",
-        "description": "stylish storage solution.",
+        "description": "Stylish storage solution.",
         "price": 699.99
     },
     {
