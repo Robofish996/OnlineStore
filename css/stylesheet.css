@@ -184,7 +184,7 @@
       /*styling hero banner*/
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image:linear-gradient(rgba(177, 177, 177, 0.7), rgba(168, 168, 168, 0.7)),  url("./images/lounge_option.jpg");
+  background-image:linear-gradient(rgba(177, 177, 177, 0.4), rgba(168, 168, 168, 0.4)),  url("./images/lounge_option.jpg");
 
   
   height: 800px;
